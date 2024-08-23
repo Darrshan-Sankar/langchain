@@ -7,7 +7,7 @@ setup(
     author='Your Name',  # Replace with your name
     author_email='your.email@example.com',  # Replace with your email
     license='MIT',
-    packages=find_packages(where='libs'),
+    packages=find_packages(where='libs', include=['experimental', 'langchain']),
     package_dir={'': 'libs'},
     install_requires=[],  # Add any additional dependencies here
     extras_require={
