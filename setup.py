@@ -1,20 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='langchain',       # Replace with your package name
-    version='0.0.321',                 # Replace with your package version
-    description='LangChain mono-repo', # Replace with your package description
-    long_description=open('README.md').read(),  # Read the long description from README
-    long_description_content_type='text/markdown',
-    author='Your Name',             # Replace with your name
+    name='langchain',
+    version='0.0.1',
+    description='LangChain mono-repo',
+    author='Your Name',  # Replace with your name
     author_email='your.email@example.com',  # Replace with your email
-    license='MIT',                  # Replace with your license type
-    url='https://www.github.com/Darrshan-Sankar/langchain',  # Updated to the correct repository URL
-    packages=find_packages(),       # Automatically find packages
-    include_package_data=True,     # Include package data specified in MANIFEST.in
-    install_requires=[
-        # List your package dependencies here
-    ],
+    license='MIT',
+    packages=find_packages(where='libs'),
+    package_dir={'': 'libs'},
+    install_requires=[],  # Add any additional dependencies here
     extras_require={
         'docs': [
             'autodoc_pydantic==1.8.0',
@@ -36,14 +31,6 @@ setup(
             'codespell==2.2.0'
         ]
     },
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.11',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
-    python_requires='>=3.8',
+    include_package_data=True,
+    python_requires='>=3.8.1,<4.0',
 )
