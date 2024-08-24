@@ -4,7 +4,7 @@ import operator
 from typing import Optional, Sequence
 
 from langchain.callbacks.base import Callbacks
-from langchain.retrievers.document_compressors import BaseDocumentCompressor
+from langchain.retrievers.document_compressors.base import BaseDocumentCompressor
 from langchain.schema.document import Document
 from langchain.retrievers.document_compressors.cross_encoder import BaseCrossEncoder
 
