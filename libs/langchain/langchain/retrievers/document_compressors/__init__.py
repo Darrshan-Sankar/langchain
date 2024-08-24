@@ -9,7 +9,7 @@ from langchain.retrievers.document_compressors.cohere_rerank import CohereRerank
 from langchain.retrievers.document_compressors.embeddings_filter import (
     EmbeddingsFilter,
 )
-from langchain.retreivers.document_compressors.cross_encoder_rerank import CrossEncoderReranker
+from langchain.retrievers.document_compressors.cross_encoder_rerank import CrossEncoderReranker
 
 __all__ = [
     "DocumentCompressorPipeline",
