@@ -14,16 +14,16 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from langchain_community.cross_encoders.base import (
+    from langchain.cross_encoders.base import (
         BaseCrossEncoder,
     )
-    from langchain_community.cross_encoders.fake import (
+    from langchain.cross_encoders.fake import (
         FakeCrossEncoder,
     )
-    from langchain_community.cross_encoders.huggingface import (
+    from langchain.cross_encoders.huggingface import (
         HuggingFaceCrossEncoder,
     )
-    from langchain_community.cross_encoders.sagemaker_endpoint import (
+    from langchain.cross_encoders.sagemaker_endpoint import (
         SagemakerEndpointCrossEncoder,
     )
 
@@ -35,10 +35,10 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "BaseCrossEncoder": "langchain_community.cross_encoders.base",
-    "FakeCrossEncoder": "langchain_community.cross_encoders.fake",
-    "HuggingFaceCrossEncoder": "langchain_community.cross_encoders.huggingface",
-    "SagemakerEndpointCrossEncoder": "langchain_community.cross_encoders.sagemaker_endpoint",  # noqa: E501
+    "BaseCrossEncoder": "langchain.cross_encoders.base",
+    "FakeCrossEncoder": "langchain.cross_encoders.fake",
+    "HuggingFaceCrossEncoder": "langchain.cross_encoders.huggingface",
+    "SagemakerEndpointCrossEncoder": "langchain.cross_encoders.sagemaker_endpoint",  # noqa: E501
 }
 
 
